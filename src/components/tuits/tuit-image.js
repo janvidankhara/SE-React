@@ -1,7 +1,7 @@
 const TuitImage = ({tuit}) => {
   return(
     <div className="position-relative">
-      <img src={`../images/${tuit.image}`} alt="description of image"
+      <img src={`../images/${tuit.image}`} alt="description of rounded"
            className="mt-2 w-100 ttr-rounded-15px"/>
       {
         tuit['image-overlay'] &&

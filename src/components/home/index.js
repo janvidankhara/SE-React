@@ -7,7 +7,7 @@ const Home = () => {
         <h4 className="fw-bold p-2">Home</h4>
         <div className="d-flex">
           <div className="p-2">
-            <img className="ttr-width-50px rounded-circle" alt="description of image"
+            <img className="ttr-width-50px rounded-circle" alt="description of round circlex`"
                  src="../images/nasa-logo.jpg"/>
           </div>
           <div className="p-2 w-100">
