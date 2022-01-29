@@ -24,7 +24,7 @@ const Home = () => {
                 <i className="far fa-map-location me-3"></i>
               </div>
               <div className="col-2">
-                <a className="btn btn-primary rounded-pill fa-pull-right fw-bold ps-4 pe-4">
+                <a href="/#" className="btn btn-primary rounded-pill fa-pull-right fw-bold ps-4 pe-4">
                   Tuit
                 </a>
               </div>
