@@ -115,27 +115,30 @@ describe('findAllUsers',  () => {
   // setup data before test
   beforeAll(() =>
     // insert several known users
+    Promise.all(
     usernames.map(username =>
       createUser({
         username,
         password: `${username}123`,
         email: `${username}@stooges.com`
       })
-    )
+    ))
   );
 
   // clean up after ourselves
   afterAll(() =>
     // delete the users we inserted
+    Promise.all(
     usernames.map(username =>
       deleteUsersByUsername(username)
-    )
+    ))
   );
+
 
   test('can retrieve all users from REST API', async () => {
     // retrieve all the users
-    const users = await findAllUsers();
 
+    const users = await findAllUsers();
     // there should be a minimum number of users
     expect(users.length).toBeGreaterThanOrEqual(usernames.length);
 
