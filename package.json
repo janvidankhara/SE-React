@@ -39,6 +39,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@types/jest": "^27.4.0",
+    "babel-plugin-css-modules-transform": "^1.6.2",
     "ts-jest": "^27.1.3"
   }
 }
