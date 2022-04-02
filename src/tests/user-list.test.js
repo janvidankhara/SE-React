@@ -4,7 +4,8 @@ import {HashRouter} from "react-router-dom";
 import {findAllUsers} from "../services/users-service";
 import axios from "axios";
 import {createUser} from "./services";
-
+import React from "react";
+import '@testing-library/jest-dom';
 jest.mock('axios');
 
 const MOCKED_USERS = [
